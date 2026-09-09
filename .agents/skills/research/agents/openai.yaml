@@ -1,0 +1,4 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "一手资料调研 / Research"
+  short_description: "基于官方文档、源码和规范等一手资料开展调研并形成带引用的Markdown报告。 / Research from high-trust sources"

@@ -1,0 +1,4 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "原型验证 / Prototype"
+  short_description: "制作一次性逻辑或界面原型来回答设计问题；适用于需要先看效果或验证状态模型时。 / Prototype to answer a design question"

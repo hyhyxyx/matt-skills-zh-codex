@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "重新解释 / Wait What"
+  short_description: "当上一条说明没有讲清楚时，结合项目语境用更直白的中文重新解释。 / Re-pitch that: simpler, with the context I'm missing"
+policy:
+  allow_implicit_invocation: false

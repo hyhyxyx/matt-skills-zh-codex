@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "互动教学 / Teach"
+  short_description: "在当前工作区中通过互动课程、练习和学习记录教授一项技能或概念。 / Learn a concept in a guided workspace"
+policy:
+  allow_implicit_invocation: false

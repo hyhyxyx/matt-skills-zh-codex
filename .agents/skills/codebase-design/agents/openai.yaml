@@ -1,0 +1,4 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "代码库设计 / Codebase Design"
+  short_description: "使用深模块方法设计或改善代码接口、接缝和可测试性；适用于模块设计和架构重构。 / Vocabulary for deep-module design"

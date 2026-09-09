@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "初始化技能配置 / Setup Matt Pocock Skills"
+  short_description: "为当前仓库配置问题跟踪器、分诊标签和领域文档布局；首次使用工程技能集前运行。 / Configure a repo for the skills"
+policy:
+  allow_implicit_invocation: false

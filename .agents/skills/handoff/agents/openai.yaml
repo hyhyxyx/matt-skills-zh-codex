@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "会话交接 / Handoff"
+  short_description: "把当前对话压缩成可供另一个智能体或新会话继续执行的交接文档。 / Compact a conversation into a handoff"
+policy:
+  allow_implicit_invocation: false

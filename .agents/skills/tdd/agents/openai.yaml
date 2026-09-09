@@ -1,0 +1,4 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "测试驱动开发 / TDD"
+  short_description: "采用红灯、绿灯循环进行测试驱动开发；适用于明确要求测试优先、集成测试或红绿重构时。 / Test-driven red-green-refactor"

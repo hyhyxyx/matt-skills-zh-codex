@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "技能导航 / Ask Matt"
+  short_description: "为当前问题选择合适的技能或工作流；适用于不知道下一步该使用哪个技能时。 / Find the right skill or workflow"
+policy:
+  allow_implicit_invocation: false

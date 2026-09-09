@@ -1,0 +1,4 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "故障诊断 / Diagnosing Bugs"
+  short_description: "用可重复反馈闭环诊断疑难故障和性能回退；适用于报错、失败、卡顿、抖动或难以复现的问题。 / Diagnose hard bugs and regressions"

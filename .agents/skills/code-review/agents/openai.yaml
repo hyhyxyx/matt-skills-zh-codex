@@ -1,0 +1,4 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "代码审查 / Code Review"
+  short_description: "从代码规范和需求规格两个维度审查指定基准后的改动；适用于分支、PR或工作区代码评审。 / Review a diff on standards and spec"

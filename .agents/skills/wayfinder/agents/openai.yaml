@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "大型工作导航 / Wayfinder"
+  short_description: "把超出单次会话的大型模糊工作规划为决策任务地图，并逐步消除关键不确定性。 / Map a large effort as decision tickets"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "生成规格 / To Spec"
+  short_description: "把当前对话整理成可实施规格并发布到已配置的问题跟踪器。 / Turn a conversation into a spec"
+policy:
+  allow_implicit_invocation: false

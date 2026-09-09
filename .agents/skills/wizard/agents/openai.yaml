@@ -1,0 +1,4 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "交互式配置向导 / Wizard"
+  short_description: "生成人机协作的交互式配置向导；适用于必须由用户完成的账号、凭据、控制台或迁移步骤。 / Generate an interactive setup wizard"

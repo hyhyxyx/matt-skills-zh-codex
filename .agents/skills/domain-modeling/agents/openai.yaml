@@ -1,0 +1,4 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "领域建模 / Domain Modeling"
+  short_description: "建立并校准项目领域语言、CONTEXT文档和架构决策记录；适用于术语、概念关系和关键决策。 / Build and sharpen a domain model"

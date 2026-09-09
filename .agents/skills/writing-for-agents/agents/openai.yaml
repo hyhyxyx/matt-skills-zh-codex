@@ -1,0 +1,4 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "编写智能体文档 / Writing for Agents"
+  short_description: "编写或修改供智能体读取的技能、AGENTS.md、CLAUDE.md及其引用文档。 / Write documents agents consume"

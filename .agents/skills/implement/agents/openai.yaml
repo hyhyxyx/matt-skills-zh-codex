@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "按规格实施 / Implement"
+  short_description: "按照已经确认的规格或任务票实施功能；适用于需求已经清晰并准备编码时。 / Build work from a spec or tickets"
+policy:
+  allow_implicit_invocation: false

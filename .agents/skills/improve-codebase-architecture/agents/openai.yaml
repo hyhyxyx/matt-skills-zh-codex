@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "改善代码库架构 / Improve Codebase Architecture"
+  short_description: "扫描代码库中的深模块改进机会并生成可视化报告；适用于主动检查架构质量。 / Find and grill architecture improvements"
+policy:
+  allow_implicit_invocation: false

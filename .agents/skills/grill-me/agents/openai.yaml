@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "深度追问 / Grill Me"
+  short_description: "通过持续访谈把计划、设计或想法中的隐含分支全部澄清。 / Sharpen a plan through interview"
+policy:
+  allow_implicit_invocation: false

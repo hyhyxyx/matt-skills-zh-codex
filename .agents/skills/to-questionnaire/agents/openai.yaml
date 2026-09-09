@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "生成调研问卷 / To Questionnaire"
+  short_description: "把需要由其他人回答的决策缺口整理成结构化问卷。 / Front-load questions into a doc for someone to answer"
+policy:
+  allow_implicit_invocation: false

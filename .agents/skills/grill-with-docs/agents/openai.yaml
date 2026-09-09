@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "深度澄清并沉淀文档 / Grill with Docs"
+  short_description: "通过连续追问澄清设计，同时沉淀领域词汇和架构决策文档；适用于需要在项目内留下决策依据的方案讨论。 / Grill a design and write its docs"
+policy:
+  allow_implicit_invocation: false

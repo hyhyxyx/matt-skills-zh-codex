@@ -1,0 +1,6 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "需求与问题分诊 / Triage"
+  short_description: "按分诊状态机核验、分类并整理外部问题或PR，生成可供智能体执行的任务说明。 / Move issues through triage roles"
+policy:
+  allow_implicit_invocation: false

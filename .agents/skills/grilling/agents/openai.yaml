@@ -1,0 +1,4 @@
+# CODEX_ZH_ADAPTED: v1
+interface:
+  display_name: "深度澄清 / Grilling"
+  short_description: "对计划、决定或想法进行逐轮追问和压力测试，直到没有未处理的决策分支。 / Stress-test thinking a round of questions at a time"
