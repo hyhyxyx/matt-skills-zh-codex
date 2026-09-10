@@ -53,6 +53,17 @@ foreach ($name in $expected) {
   if (-not (Test-Path -LiteralPath (Join-Path $skillDir 'references\CODEX-ZH.md') -PathType Leaf)) {
     $errors.Add("$name 缺少可独立安装的兼容规则副本。")
   }
+  if ($name -eq 'grill-with-docs') {
+    foreach ($requiredInstruction in @(
+      '## 中文访谈输出校验',
+      '每轮发送前检查当前回复',
+      '任一项不符合时，先重写完整回复'
+    )) {
+      if (-not $content.Contains($requiredInstruction)) {
+        $errors.Add("grill-with-docs 缺少中文访谈输出规则：$requiredInstruction")
+      }
+    }
+  }
   if (-not (Test-Path -LiteralPath $openaiPath -PathType Leaf)) {
     $errors.Add("$name 缺少 agents/openai.yaml。")
   } else {
@@ -89,9 +100,16 @@ foreach ($required in @(
   }
 }
 
-$sourceFiles = @(
-  git -C $repoRoot ls-tree -r --name-only upstream/main -- skills/engineering skills/productivity
-)
+$upstreamRef = 'upstream/main'
+git -C $repoRoot rev-parse --verify --quiet "$upstreamRef^{commit}" | Out-Null
+if ($LASTEXITCODE -ne 0) {
+  $errors.Add("缺少 $upstreamRef，无法验证上游正式内容是否完整保留。")
+  $sourceFiles = @()
+} else {
+  $sourceFiles = @(
+    git -C $repoRoot ls-tree -r --name-only $upstreamRef -- skills/engineering skills/productivity
+  )
+}
 foreach ($sourceFile in $sourceFiles) {
   if ($sourceFile -notmatch '^skills/(engineering|productivity)/([^/]+)/(.+)$') {
     continue

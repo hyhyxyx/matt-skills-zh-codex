@@ -51,6 +51,9 @@ Two known causes. The mundane one: nothing qualified. ADRs need all three gates,
 **It asked everything at once, with no recommendations, and never mentioned `CONTEXT.md`.**
 That is the skill failing to load its two dependencies. Because `SKILL.md` is a one-line delegation, an agent that does not pick up [grilling](https://aihero.dev/skills-grilling) and [domain-modeling](https://aihero.dev/skills-domain-modeling) guesses at what grilling means, and you get an undifferentiated question dump. Partial loading is the more confusing case: `grilling` loads, `domain-modeling` does not, and you get a good interview with no paper trail. It correlates with model and [effort](https://www.aihero.dev/ai-coding-dictionary/effort) level, and it is the most reported problem with this skill. If you suspect it, ask the agent directly which skills it loaded.
 
+**Can the Chinese Codex edition keep the whole interview in Chinese?**
+Yes. Its adapter checks every user-facing question, option, recommendation, progress update and summary before sending. Exact code identifiers, commands, API names, filenames and product names can remain in their original language. Stray English prose, HTML fragments, template placeholders, repeated option labels and unfinished sentences fail the check and must be rewritten before the next round is shown.
+
 **Where did all my other decisions go?**
 Into the conversation only. This is the most substantive open complaint about the skill: the glossary is not a spec, most answers do not earn an ADR, and there is no ledger tying each resolved answer through to a spec, a ticket and a test. Precise answers (ordering guarantees, negative requirements, numeric defaults) get softened into weaker prose downstream, and the result can look complete while missing the thing you actually decided. The mitigation available today is to keep the session and feed it straight to [to-spec](https://aihero.dev/skills-to-spec), and to re-read the spec against your own answers rather than assuming it captured them.
 
@@ -68,6 +71,7 @@ Nobody is happy with the name. There is an open suggestion to rename it `grill-d
 - `CONTEXT.md` changes *during* the session, term by term, rather than appearing in one lump at the end.
 - The glossary reads as pure vocabulary (your project's words with tight definitions) and contains no implementation detail or spec-like prose.
 - Questions the codebase can answer get answered by reading the codebase, not asked of you.
+- In a Chinese interview, headings, questions, options, recommendations and summaries stay in natural Chinese, apart from exact technical identifiers that need to remain unchanged.
 - You get few or no ADRs, and the ones you get are decisions you would be annoyed to have to re-litigate.
 - It challenges a word you used because your existing glossary defines it differently.
 

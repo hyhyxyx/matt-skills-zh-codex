@@ -2,7 +2,7 @@
 
 这是 `mattpocock/skills` 的独立中文 Codex 适配分支。它完整保留上游25个正式技能及支持文件，并增加：
 
-- 简体中文交互和中文触发描述；
+- 简体中文交互、中文触发描述，以及中文访谈发送前检查；
 - Codex `$skill-name` 调用映射；
 - Codex 工具与协作能力映射；
 - Windows/PowerShell 原生模板；
